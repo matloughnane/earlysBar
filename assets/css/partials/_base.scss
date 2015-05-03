@@ -1,0 +1,36 @@
+* {
+	margin: 0px;
+};
+
+body {
+	background-color: $primary_light;
+	font-family: Montserrat;
+}
+
+p {
+	margin: 15px 10px;
+ }
+
+img {
+	max-width:100%;
+}
+
+#logo {
+	z-index: 4000;
+}
+
+// CARD
+.card {
+	background-color: $background;
+	margin: 10px 0px;
+	padding: 10px;
+}
+
+// SHADOWS
+
+.shadow1 {
+	box-shadow: $shadow1;
+}
+.shadow2 {
+	box-shadow: $shadow2;
+}

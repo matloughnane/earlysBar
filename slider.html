@@ -4,6 +4,9 @@
 <head>
 	<title>Early's Bar</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+
 	<link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 </head>
@@ -14,7 +17,7 @@
 		<img id="logo" src="assets/img/earlys_logo.svg">
 		<nav>
 			<ul>
-				<a href="#"><li class="active">Home</li></a>
+				<a href="#"><li class="active">SLIDER</li></a>
 				<a href="#"><li>About</li></a>
 				<a href="#" ><li class="logo">LOGO</li></a>
 				<a href="#"><li>News</li></a>
@@ -28,7 +31,12 @@
 		<!-- BANNER IMAGE -->
 		<section class="grid no-gutters shadow1">
 			<div class="unit whole">
-				<img src="assets/img/red_sunset.jpg">	
+				<div class="your-class">
+					<img src="assets/img/red_sunset.jpg">
+					<img src="assets/img/red_sunset.jpg">
+					<img src="assets/img/red_sunset.jpg">	
+				</div>
+
 			</div>
 		</section>
 
@@ -55,8 +63,20 @@
 		</section>
 	</main>
 
+
 	<!-- SCRIPTS -->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="assets/js/slick.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+	  $('.your-class').slick({
+	    	autoplay: true,
+  			autoplaySpeed: 5000,
+	  });
+	});
+	</script>
+				
+
 </body>
 
 </html>
