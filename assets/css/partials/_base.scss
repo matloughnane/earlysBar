@@ -4,19 +4,50 @@
 
 body {
 	background-color: $primary_light;
-	font-family: Montserrat;
+	font-family: Ubuntu, sans-serif;
+}
+
+::selection{
+	background-color: $secondary_light_alpha;
 }
 
 p {
+	font-weight: 400;
 	margin: 15px 10px;
  }
 
+// IMAGES
 img {
 	max-width:100%;
 }
-
 #logo {
 	z-index: 4000;
+}
+
+blockquote {
+	margin: 1.5em 10px;
+	padding: 0.5em 10px;
+	quotes: "\201C""\201D""\2018""\2019";
+	&:before{
+		font-family: Georgia, Times;
+		color: $secondary_light;
+		content: open-quote;
+		font-size: 4em;
+		line-height: 0.1em;
+		vertical-align: -0.4em;
+	}
+	 p {
+	  display: inline;
+	  font-style: italic;
+	  font-weight: 500;
+	  color: $secondary;
+	}
+	footer {
+		background-color: $background;
+		padding: 10px 20px 0px 0px;
+		color: $primary_dull;
+		text-align: right;
+	}
 }
 
 // CARD
@@ -27,7 +58,6 @@ img {
 }
 
 // SHADOWS
-
 .shadow1 {
 	box-shadow: $shadow1;
 }

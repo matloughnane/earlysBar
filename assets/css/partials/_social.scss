@@ -1,0 +1,44 @@
+.twitter {
+	i {
+		color: $twitter_bg;
+		font-size: 2em;
+	}
+}
+
+.facebook {
+	i {
+		color: $facebook_bg;
+		font-size: 2em;
+	}
+}
+
+.instagram {
+	i {
+		color: $instagram_bg;
+		font-size: 2em;
+	}
+}
+
+
+.insta_title {
+    display: inline;
+    span {
+    	font-size: 1.1em;
+    	display: inline-block;
+    	margin: 10px 0px;
+    }
+}
+
+.insta_captions {
+	font-size:1em;
+	color: $secondary_light;
+	display: block;
+	margin: 0px 5px 5px 8px;
+	a {
+		text-decoration: none;
+		color: $secondary;
+		&:hover {
+			color: $secondary_light;
+		}
+	}
+}

@@ -2,10 +2,32 @@
 <html>
 
 <head>
+	<!-- META TAGS -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+
 	<title>Early's Bar</title>
+	<!-- STYLES -->
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-	<link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+
+		<!-- SCRIPTS -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="assets/js/slick.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+	  $('.carousel').slick({
+	    	autoplay: true,
+  			autoplaySpeed: 5000,
+  			infinite: true,
+  			arrows: false,
+  			dots: true,
+	  });
+	});
+	</script>
+
 </head>
 
 <body>
@@ -13,8 +35,9 @@
 	<header>
 		<img id="logo" src="assets/img/earlys_logo.svg">
 		<nav>
-			<ul>
-				<a href="#"><li class="active">Home</li></a>
+			<a href="#" class="btn show-on-mobiles"><i class="icon-menu"></i></a>
+			<ul class="hide-on-mobiles">
+				<a href="#"><li class="active">HOME</li></a>
 				<a href="#"><li>About</li></a>
 				<a href="#" ><li class="logo">LOGO</li></a>
 				<a href="#"><li>News</li></a>
@@ -26,9 +49,14 @@
 	<!-- MAIN CONTENT -->
 	<main class="wrap">
 		<!-- BANNER IMAGE -->
-		<section class="grid no-gutters shadow1">
+		<section class="grid no-gutters slider shadow1">
 			<div class="unit whole">
-				<img src="assets/img/red_sunset.jpg">	
+				<div class="carousel">
+					<img src="assets/img/red_sunset.jpg" alt="A red sky as seen from Early's Bar">
+					<img src="assets/img/bar_session.jpg" alt="A shot of Early's Bar from the outside">
+					<img src="assets/img/sunset.jpg">	
+				</div>
+
 			</div>
 		</section>
 
@@ -37,26 +65,87 @@
 			<div class="unit w-1-2 card shadow1">
 				<h1>Early's Bar</h1>
 
-				<p>Early's Bar is a family run pub situated on the idyllic island of Arranmore, County Donegal. Steeped in history and legendary for it's music and craic, Early's Bar is the perfect spot to relax, have fun and forget your worries for a while. With that unmistakable charm of the traditional Irish pub, relaxed and calm in it's own way, Early's can also have a vibrancy and energy which can create happy memories that will last a lifetime.</p>
+				<p>Early's Bar is a family run pub situated on the idyllic island of Arranmore, County Donegal. Steeped in history and legendary for it's music and craic, Early's Bar is the perfect spot to relax, have fun and forget your worries for a while.</p>
+				<p>With that unmistakable charm of the traditional Irish pub, relaxed and calm in it's own way, Early's can also have a vibrancy and energy which can create happy memories that will last a lifetime.</p>
 
-				<p>Less than a two minute walk form the ferry pier on the island, Early's Bar is the ideal location for a quiet drink on a day-trip to Arranmore. Bar food is served on the premises including their well renowned stone baked pizzas. Every evening the bar is a regular spot for both locals and tourists alike and you will always be guaranteed an enjoyable night and a bit of craic when the guitar is brought out for a sing-song. Early's Bar has entertainment every weekend with disco's and live music in the lounge and impromptu sessions in the bar. So the next time you are in Donegal, make your way to Arranmore, leave your worries behind you and drop in for a visit.</p>
+				<blockquote>
+					<p>Someone needs to make up a cool quote that fits in here. It can be made up by whoever and it will fit on multiple lines.</p>
+					<footer> - Mat Loughnane</footer>
+				</blockquote>
+
+				<p>Less than a two minute walk form the ferry pier on the island, Early's Bar is the ideal location for a quiet drink on a day-trip to Arranmore. Bar food is served on the premises including their well renowned stone baked pizzas. Every evening the bar is a regular spot for both locals and tourists alike and you will always be guaranteed an enjoyable night and a bit of craic when the guitar is brought out for a sing-song.</p>
+				<p>Early's Bar has entertainment every weekend with disco's and live music in the lounge and impromptu sessions in the bar. So the next time you are in Donegal, make your way to Arranmore, leave your worries behind you and drop in for a visit.</p>
 			</div>
 			<div class="unit w-1-2 no_padding">
-				<div class="card shadow1">
-					TWITTER
+				<div class="card shadow1 twitter">
+					<a class="social" href="#"><i class="icon-twitter"></i></a>
 				</div>
-				<div class="card shadow1">
-					FACEBOOK
+				<div class="card shadow1 instagram">
+					<div class="demo_insta">
+						<!-- TITLE -->
+						<!-- <a class="social" href="#"><i class="icon-instagramm"></i></a> <div class="insta_title"> <span>Use the hashtag #earlysbar to be featured here:</span> </div> -->
+						<!-- CAPTIONS -->
+						<!-- <span class="insta_captions">@{{model.user.username}}: {{caption}}</span> -->
+						<!-- IMAGE -->
+						<!-- <a href="{{link}}" target="blank"><img src="assets/img/insta_test.jpg"/></a> -->
+					</div>
+					<div id="instafeed"></div>		
 				</div>
-				<div class="card shadow1">
-					INSTAGRAM
-				</div>
+				<!-- <div class="card shadow1 facebook">
+					<a class="social" href="#"><i class="icon-facebook-squared"></i></a>
+				</div> -->
 			</div>
 		</section>
 	</main>
 
-	<!-- SCRIPTS -->
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<footer>
+		<div class="wrap grid">
+			<div class="unit w-1-3">
+				<a href="index.html">Home</a>
+				<a href="pages/about.html">About</a>
+					<a class="sub_link" href="pages/about/about.html">Entertainment</a>
+					<a class="sub_link" href="pages/about/about.html">Food & Drink</a>
+					<a class="sub_link" href="pages/about/about.html">The Island</a>
+					<a class="sub_link" href="pages/about/about.html">How To Get Here</a>
+
+			</div>
+			<div class="unit w-1-3">				
+				<a href="pages/news.html">News</a>
+				<a href="pages/contact.html">Contact</a>
+					<a class="sub_link" href="#" target="_blank">B&B</a>
+					<a class="sub_link" href="mailto:jerryearly@hotmail.com" target="_blank">Email</a>
+					<a class="sub_link" href="tel:+353749520515">Call Us</a>
+			</div>
+			<div class="unit w-1-3">
+				<h3>Share</h3>
+				<span>Help us spread the word about the bar.</span>
+				<div class="align-center">
+					<a class="social" href="#"><i class="icon-facebook-squared"></i></a>
+					<a class="social" href="#"><i class="icon-twitter"></i></a>
+					<a class="social" href="#"><i class="icon-gplus"></i></a>
+					<a class="social" href="#"><i class="icon-instagramm"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="align-center copy">
+			&copy; Early's Bar 2015 &middot; <a href="http://matloughnane.com" target="_blank"> by mat.loughnane </a>
+		</div>
+	</footer>
+
+	<!-- LAZY LOAD -->
+	<script type="text/javascript" src="assets/js/instafeed.min.js"></script>
+	<script type="text/javascript">
+	    var feed = new Instafeed({
+	        get: 'tagged',
+	        tagName: 'earlysbar',
+	        clientId: '2bfdb53caa8b436d8f03da6c8b4ce186',
+	        resolution: 'standard_resolution',
+	        limit: 1,
+	        template: '<a class="social" href="#"><i class="icon-instagramm"></i></a> <div class="insta_title"> <span>Use the hashtag #earlysbar to be featured here:</span> </div> <a href="{{link}}" target="blank"><img src="assets/img/insta_test.jpg"/></a> <span class="insta_captions"><a href="http://instagram.com/{{model.user.username}}" target="_blank">@{{model.user.username}}:</a> {{caption}}</span> ',
+	    });
+	    feed.run();
+	</script>
+
 </body>
 
 </html>

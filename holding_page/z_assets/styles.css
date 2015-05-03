@@ -1,0 +1,22 @@
+/* line 1, sass/partials/_layout.scss */
+* {
+  margin: 0px;
+}
+
+/* line 5, sass/partials/_layout.scss */
+body {
+  background: #d2d7d3;
+  color: #2c3e50;
+  text-align: center;
+  font-family: Montserrat, Inconsolata;
+  font-size: 20px;
+  margin: 20px;
+}
+
+/* line 13, sass/partials/_layout.scss */
+img {
+  margin-bottom: 20px;
+  max-width: 100%;
+  text-transform: uppercase;
+}
+

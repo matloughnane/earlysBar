@@ -1,0 +1,48 @@
+footer {
+	background: $primary_dull;
+	a {	
+		padding: 5px;
+		color: $background;
+		text-decoration: none;
+		display: block;
+		&:hover {
+			color: $tertiary;
+		}
+		&.sub_link {
+			padding: 2px;
+			margin-left: 15px;
+			font-size: 0.8em;
+			color: $primary_light;
+			&:hover {
+				color: $tertiary;
+			}
+		}
+		&.social {
+			font-size: 2.4em;
+			display: inline;
+		}
+	}
+	div.copy {
+		color: $background;
+		font-size: 0.75em;
+		padding-bottom: 10px;
+		a {
+			display: inline;
+			color: $background;
+			padding: 0px;
+			&:hover {
+				color: $tertiary;
+			}
+		}
+	}
+	h3 {
+		color: $background;
+		font-size: 1.1em;
+		font-weight: 600;
+	}
+	span {
+		display: block;
+		color: $primary_light;
+		padding: 15px 0px;
+	}
+}
