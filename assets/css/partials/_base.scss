@@ -4,16 +4,20 @@
 
 body {
 	background-color: $primary_light;
-	font-family: Ubuntu, sans-serif;
+	font-family: Trebuchet MS, Ubuntu, sans-serif;
 }
 
 ::selection{
 	background-color: $secondary_light_alpha;
 }
 
+h1 {
+	margin-left: 1em;
+}
+
 p {
 	font-weight: 400;
-	margin: 15px 10px;
+	margin: 15px 20px;
  }
 
 // IMAGES
@@ -53,10 +57,23 @@ blockquote {
 // CARD
 .card {
 	background-color: $background;
-	margin: 10px 0px;
+	margin: 10px 0px 0px 0px;
 	padding: 10px;
 }
 
+.card_top {
+	margin: 0px 0px 0px 0px;
+}
+
+@media screen and (max-width: 768px) {
+	.padded {
+		padding: 0px 10px;
+	}
+
+	.card_top {
+		margin: 10px 0px 0px 0px;
+	}
+}
 // SHADOWS
 .shadow1 {
 	box-shadow: $shadow1;

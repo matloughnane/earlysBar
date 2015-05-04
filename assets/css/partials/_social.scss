@@ -19,6 +19,64 @@
 	}
 }
 
+// TWITTER
+
+#tw-widget1 {
+	ul {
+		list-style-type: none;
+		-webkit-padding-start: 10px;
+		display: inline;
+		-webkit-margin-before: 0em;
+  		-webkit-margin-after: 0em;
+		li {
+			padding: 0px 20px;
+			p {
+				margin: 5px 10px;
+				&.tweet {
+					font-style: italic;
+					margin: 10px 15px;
+				}
+				&.interact {
+					text-align: center;
+					a {	
+						font-size: 0.8em;
+						margin: 0px 20px;
+						text-decoration: none;
+						color: $secondary_light;
+						&:hover {
+							color: $secondary_dull;
+						}
+					}
+				}
+				&.timePosted {
+					text-align: right;
+					font-size: 0.75em;
+					color: $primary;
+				}
+			}
+			div.user {
+				a {
+					img {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+// INSTAGRAM
+
+#instafeed {
+	div {
+		a {
+			img {
+				box-shadow: $shadow1;
+			}
+		}
+	}
+}
 
 .insta_title {
     display: inline;
@@ -30,7 +88,7 @@
 }
 
 .insta_captions {
-	font-size:1em;
+	font-size:0.8em;
 	color: $secondary_light;
 	display: block;
 	margin: 0px 5px 5px 8px;

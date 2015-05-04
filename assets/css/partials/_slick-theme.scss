@@ -131,6 +131,14 @@
 
     text-align: center;
 }
+
+
+@media screen and (max-width: 768px) {
+    .slick-dots {
+        display: none !important;
+    }
+}
+
 .slick-dots li
 {
     z-index: 8000;
