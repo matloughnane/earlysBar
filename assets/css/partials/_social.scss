@@ -35,6 +35,12 @@
 				&.tweet {
 					font-style: italic;
 					margin: 10px 15px;
+					a {
+						color: $primary_dull;
+						&:hover {
+							color: $secondary;
+						}
+					}
 				}
 				&.interact {
 					text-align: center;
@@ -56,6 +62,8 @@
 			}
 			div.user {
 				a {
+					color: $primary_dull;
+					text-decoration: none;
 					img {
 						display: none;
 					}

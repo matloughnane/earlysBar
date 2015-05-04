@@ -202,61 +202,74 @@ header img {
   font-style: italic;
   margin: 10px 15px;
 }
-/* line 39, partials/_social.scss */
+/* line 38, partials/_social.scss */
+#tw-widget1 ul li p.tweet a {
+  color: #1a4c6b;
+}
+/* line 40, partials/_social.scss */
+#tw-widget1 ul li p.tweet a:hover {
+  color: #681a3f;
+}
+/* line 45, partials/_social.scss */
 #tw-widget1 ul li p.interact {
   text-align: center;
 }
-/* line 41, partials/_social.scss */
+/* line 47, partials/_social.scss */
 #tw-widget1 ul li p.interact a {
   font-size: 0.8em;
   margin: 0px 20px;
   text-decoration: none;
   color: #8e255c;
 }
-/* line 46, partials/_social.scss */
+/* line 52, partials/_social.scss */
 #tw-widget1 ul li p.interact a:hover {
   color: #380721;
 }
-/* line 51, partials/_social.scss */
+/* line 57, partials/_social.scss */
 #tw-widget1 ul li p.timePosted {
   text-align: right;
   font-size: 0.75em;
   color: #2c93c6;
 }
-/* line 59, partials/_social.scss */
+/* line 64, partials/_social.scss */
+#tw-widget1 ul li div.user a {
+  color: #1a4c6b;
+  text-decoration: none;
+}
+/* line 67, partials/_social.scss */
 #tw-widget1 ul li div.user a img {
   display: none;
 }
 
-/* line 74, partials/_social.scss */
+/* line 82, partials/_social.scss */
 #instafeed div a img {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-/* line 81, partials/_social.scss */
+/* line 89, partials/_social.scss */
 .insta_title {
   display: inline;
 }
-/* line 83, partials/_social.scss */
+/* line 91, partials/_social.scss */
 .insta_title span {
   font-size: 1.1em;
   display: inline-block;
   margin: 10px 0px;
 }
 
-/* line 90, partials/_social.scss */
+/* line 98, partials/_social.scss */
 .insta_captions {
   font-size: 0.8em;
   color: #8e255c;
   display: block;
   margin: 0px 5px 5px 8px;
 }
-/* line 95, partials/_social.scss */
+/* line 103, partials/_social.scss */
 .insta_captions a {
   text-decoration: none;
   color: #681a3f;
 }
-/* line 98, partials/_social.scss */
+/* line 106, partials/_social.scss */
 .insta_captions a:hover {
   color: #8e255c;
 }
