@@ -11,19 +11,85 @@ body {
 	background-color: $secondary_light_alpha;
 }
 
-h1 {
-	margin-left: 1em;
+h1,h2,h3,h4,h5,h6 {
+	margin: 0.5em 1em;
+}
+
+h2 {
+	font-size: 1.3em;
 }
 
 p {
 	font-weight: 400;
 	margin: 15px 20px;
+	&.wider {
+		margin: 10px 10px;
+	}
+	&.inline {
+	}
+ }
+
+a {
+ 	text-decoration: none;
+ 	color: $primary; 
+}
+
+p {
+	a {
+	 	text-decoration: none;
+	 	color: $primary; 
+	 	&:hover {
+	 		color: $background;
+	 		background-color: $primary; 
+	 	}
+	}
+}
+
+ em {
+ 	color: $secondary;
+ 	margin: 10px 40px;
+ }
+
+ .secondary_title {
+ 	color: $secondary;
  }
 
 // IMAGES
 img {
+	&.resp {
 	max-width:100%;
+	}	
+	&.text_inline{
+		max-width: 500px;
+		display: inline;
+		&.smaller {
+			max-width: 250px;
+			margin: 2em;
+		}
+	}
+	&.pull-right {
+		margin: 10px;
+		margin-right: 15px;
+	}
+	&.pull-left {
+		margin: 10px;
+		margin-left: 15px;
+	}
 }
+
+@media screen and (max-width: 768px) {
+	img {
+		&.text_inline {
+			max-width: 100%;
+			display: inline-block;
+		}
+		&.pull-right,&.pull-left {
+			margin: 5px;
+			float:none;
+		}
+	}
+}
+
 #logo {
 	z-index: 4000;
 }
@@ -54,15 +120,74 @@ blockquote {
 	}
 }
 
-// CARD
+// CARDS
 .card {
 	background-color: $background;
 	margin: 10px 0px 0px 0px;
 	padding: 10px;
 }
 
+.no_padding {
+	padding: 0px !important;
+}
+
 .card_top {
 	margin: 0px 0px 0px 0px;
+}
+
+.margin_top {
+	margin-top: 20px;
+}
+
+.margin_bottom {
+	margin-bottom: 8px;
+}
+
+.bubbles {
+	background: url(../img/bubbles.png) $background center center no-repeat ;
+	background-size: cover;
+}
+
+.primary {
+	background: $primary_dull;
+	color: $background;
+}
+
+.secondary {
+	background: $secondary_light;
+	color: $background;
+}
+
+
+// MEDIA
+// VIDEO
+.videoWrapper {
+	margin: 30px;
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+// GOOGLE MAPS
+.google_maps {
+    position: relative;
+    padding-bottom: 42%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
 }
 
 @media screen and (max-width: 768px) {

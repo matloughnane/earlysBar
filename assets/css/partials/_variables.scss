@@ -5,6 +5,7 @@ $background: whitesmoke;
 // BLUES
 $primary: #2C93C6;
 $primary_dull: #1A4C6B;
+$primary_dull_alpha: rgba(26,76,107, 0.5);
 $primary_light: #A5C6D6;
 
 // WINE
@@ -26,3 +27,11 @@ $instagram_bg: #3f729b;
 // SHADOW
 $shadow1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 $shadow2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+// MOBILE NAV
+$panel_width_default: 50%;
+$panel_width_large: 50%;
+$panel_width_medium: 50%;
+$panel_transition_closing: visibility 0s 0.5s;
+$panel_transition_opening: visibility 0s 0s;
+$panel_overlay_transition: background 0.3s 0.3s;

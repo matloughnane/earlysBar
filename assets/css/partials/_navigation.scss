@@ -1,4 +1,5 @@
 nav {
+	z-index: 1000;
 	background-color: $primary_dull;
 	color: $background;
 	box-shadow: $shadow1;
@@ -7,7 +8,6 @@ nav {
 		-webkit-padding-start: 0px;
 		a {
 			color: $background;
-
 			li {
 				width: 100px;
 				display: inline-block;
@@ -16,7 +16,7 @@ nav {
 				padding: 25px 0px;
 				// border: 1px solid red;
 				&.logo {
-					width: 300px;
+					width: 275px;
 					color: $primary_dull;
 				}
 				&:hover {
@@ -31,16 +31,82 @@ nav {
 			}
 		}
 	}
-	a.btn {
+	a.btn_nav {
 		color: $background;
 		font-size: 1.2em;
 		padding: 15px;
 	}
 }
 
+nav.alternative{
+	z-index: 2;
+	background-color: $secondary;
+	font-size: 0.8em;
+	color: $background;
+	box-shadow: $shadow1;	
+	ul {
+		text-align: center;
+		-webkit-padding-start: 0px;
+		a {
+			li {
+				width: 100px;
+				display: inline-block;
+				list-style-type: none;
+				text-transform: uppercase;
+				padding: 15px 0px;
+				&:hover {
+					box-shadow: 0px -5px 0px 0px $secondary_light inset; 
+				}
+				&.active {
+					box-shadow: 0px -5px 0px 0px $secondary_dull inset; 
+				}
+				&:active {
+					background-color: $secondary_dull;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	nav.alternative{
+		ul {
+			font-size: 0.9em;
+		}
+	}
+}
+
+
+@media screen and (max-width: 612px) {
+	nav.alternative{
+		ul {
+			a {
+				li {
+					width: 100px;
+					display: inline-block;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 406px) {
+	nav.alternative{
+		ul {
+			font-size: 0.75em;
+			a {
+				li {
+					width: 70px;
+					display: inline-block;
+				}
+			}
+		}
+	}
+}
+
 header {
 	img {
-		width: 300px;
+		width: 275px;
 		position: absolute;
 		margin-left: auto;
 		margin-right: auto;
@@ -53,7 +119,8 @@ header {
 @media screen and (max-width: 768px) {
 	header {
 		img {
-			width: 50%;
+			width: 30%;
+			min-width: 200px;
 		}	
 	}
 }

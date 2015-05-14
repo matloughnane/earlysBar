@@ -16,33 +16,102 @@ body {
 }
 
 /* line 14, partials/_base.scss */
-h1 {
-  margin-left: 1em;
+h1, h2, h3, h4, h5, h6 {
+  margin: 0.5em 1em;
 }
 
 /* line 18, partials/_base.scss */
+h2 {
+  font-size: 1.3em;
+}
+
+/* line 22, partials/_base.scss */
 p {
   font-weight: 400;
   margin: 15px 20px;
 }
-
-/* line 24, partials/_base.scss */
-img {
-  max-width: 100%;
+/* line 25, partials/_base.scss */
+p.wider {
+  margin: 10px 10px;
 }
 
-/* line 27, partials/_base.scss */
+/* line 32, partials/_base.scss */
+a {
+  text-decoration: none;
+  color: #2c93c6;
+}
+
+/* line 38, partials/_base.scss */
+p a {
+  text-decoration: none;
+  color: #2c93c6;
+}
+/* line 41, partials/_base.scss */
+p a:hover {
+  color: whitesmoke;
+  background-color: #2c93c6;
+}
+
+/* line 48, partials/_base.scss */
+em {
+  color: #681a3f;
+  margin: 10px 40px;
+}
+
+/* line 53, partials/_base.scss */
+.secondary_title {
+  color: #681a3f;
+}
+
+/* line 59, partials/_base.scss */
+img.resp {
+  max-width: 100%;
+}
+/* line 62, partials/_base.scss */
+img.text_inline {
+  max-width: 500px;
+  display: inline;
+}
+/* line 65, partials/_base.scss */
+img.text_inline.smaller {
+  max-width: 250px;
+  margin: 2em;
+}
+/* line 70, partials/_base.scss */
+img.pull-right {
+  margin: 10px;
+  margin-right: 15px;
+}
+/* line 74, partials/_base.scss */
+img.pull-left {
+  margin: 10px;
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 82, partials/_base.scss */
+  img.text_inline {
+    max-width: 100%;
+    display: inline-block;
+  }
+  /* line 86, partials/_base.scss */
+  img.pull-right, img.pull-left {
+    margin: 5px;
+    float: none;
+  }
+}
+/* line 93, partials/_base.scss */
 #logo {
   z-index: 4000;
 }
 
-/* line 31, partials/_base.scss */
+/* line 97, partials/_base.scss */
 blockquote {
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
 }
-/* line 35, partials/_base.scss */
+/* line 101, partials/_base.scss */
 blockquote:before {
   font-family: Georgia, Times;
   color: #8e255c;
@@ -51,14 +120,14 @@ blockquote:before {
   line-height: 0.1em;
   vertical-align: -0.4em;
 }
-/* line 43, partials/_base.scss */
+/* line 109, partials/_base.scss */
 blockquote p {
   display: inline;
   font-style: italic;
   font-weight: 500;
   color: #681a3f;
 }
-/* line 49, partials/_base.scss */
+/* line 115, partials/_base.scss */
 blockquote footer {
   background-color: whitesmoke;
   padding: 10px 20px 0px 0px;
@@ -66,51 +135,120 @@ blockquote footer {
   text-align: right;
 }
 
-/* line 58, partials/_base.scss */
+/* line 124, partials/_base.scss */
 .card {
   background-color: whitesmoke;
   margin: 10px 0px 0px 0px;
   padding: 10px;
 }
 
-/* line 64, partials/_base.scss */
+/* line 130, partials/_base.scss */
+.no_padding {
+  padding: 0px !important;
+}
+
+/* line 134, partials/_base.scss */
 .card_top {
   margin: 0px 0px 0px 0px;
 }
 
+/* line 138, partials/_base.scss */
+.margin_top {
+  margin-top: 20px;
+}
+
+/* line 142, partials/_base.scss */
+.margin_bottom {
+  margin-bottom: 8px;
+}
+
+/* line 146, partials/_base.scss */
+.bubbles {
+  background: url(../img/bubbles.png) whitesmoke center center no-repeat;
+  background-size: cover;
+}
+
+/* line 151, partials/_base.scss */
+.primary {
+  background: #1a4c6b;
+  color: whitesmoke;
+}
+
+/* line 156, partials/_base.scss */
+.secondary {
+  background: #8e255c;
+  color: whitesmoke;
+}
+
+/* line 164, partials/_base.scss */
+.videoWrapper {
+  margin: 30px;
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+/* line 171, partials/_base.scss */
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 179, partials/_base.scss */
+.google_maps {
+  position: relative;
+  padding-bottom: 42%;
+  height: 0;
+  overflow: hidden;
+}
+/* line 184, partials/_base.scss */
+.google_maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
 @media screen and (max-width: 768px) {
-  /* line 69, partials/_base.scss */
+  /* line 194, partials/_base.scss */
   .padded {
     padding: 0px 10px;
   }
 
-  /* line 73, partials/_base.scss */
+  /* line 198, partials/_base.scss */
   .card_top {
     margin: 10px 0px 0px 0px;
   }
 }
-/* line 78, partials/_base.scss */
+/* line 203, partials/_base.scss */
 .shadow1 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-/* line 81, partials/_base.scss */
+/* line 206, partials/_base.scss */
 .shadow2 {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 /* line 1, partials/_navigation.scss */
 nav {
+  z-index: 1000;
   background-color: #1a4c6b;
   color: whitesmoke;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
-/* line 5, partials/_navigation.scss */
+/* line 6, partials/_navigation.scss */
 nav ul {
   text-align: center;
   -webkit-padding-start: 0px;
 }
-/* line 8, partials/_navigation.scss */
+/* line 9, partials/_navigation.scss */
 nav ul a {
   color: whitesmoke;
 }
@@ -124,7 +262,7 @@ nav ul a li {
 }
 /* line 18, partials/_navigation.scss */
 nav ul a li.logo {
-  width: 300px;
+  width: 275px;
   color: #1a4c6b;
 }
 /* line 22, partials/_navigation.scss */
@@ -140,15 +278,73 @@ nav ul a li:active {
   background-color: #2c93c6;
 }
 /* line 34, partials/_navigation.scss */
-nav a.btn {
+nav a.btn_nav {
   color: whitesmoke;
   font-size: 1.2em;
   padding: 15px;
 }
 
-/* line 42, partials/_navigation.scss */
+/* line 41, partials/_navigation.scss */
+nav.alternative {
+  z-index: 2;
+  background-color: #681a3f;
+  font-size: 0.8em;
+  color: whitesmoke;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+/* line 47, partials/_navigation.scss */
+nav.alternative ul {
+  text-align: center;
+  -webkit-padding-start: 0px;
+}
+/* line 51, partials/_navigation.scss */
+nav.alternative ul a li {
+  width: 100px;
+  display: inline-block;
+  list-style-type: none;
+  text-transform: uppercase;
+  padding: 15px 0px;
+}
+/* line 57, partials/_navigation.scss */
+nav.alternative ul a li:hover {
+  box-shadow: 0px -5px 0px 0px #8e255c inset;
+}
+/* line 60, partials/_navigation.scss */
+nav.alternative ul a li.active {
+  box-shadow: 0px -5px 0px 0px #380721 inset;
+}
+/* line 63, partials/_navigation.scss */
+nav.alternative ul a li:active {
+  background-color: #380721;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 73, partials/_navigation.scss */
+  nav.alternative ul {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 612px) {
+  /* line 84, partials/_navigation.scss */
+  nav.alternative ul a li {
+    width: 100px;
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 406px) {
+  /* line 95, partials/_navigation.scss */
+  nav.alternative ul {
+    font-size: 0.75em;
+  }
+  /* line 98, partials/_navigation.scss */
+  nav.alternative ul a li {
+    width: 70px;
+    display: inline-block;
+  }
+}
+/* line 108, partials/_navigation.scss */
 header img {
-  width: 300px;
+  width: 275px;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -158,11 +354,79 @@ header img {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 55, partials/_navigation.scss */
+  /* line 121, partials/_navigation.scss */
   header img {
-    width: 50%;
+    width: 30%;
+    min-width: 200px;
   }
 }
+/* line 1, partials/_buttons.scss */
+.btn {
+  font-size: 0.9em;
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 3px;
+}
+/* line 6, partials/_buttons.scss */
+.btn i {
+  color: whitesmoke;
+  font-size: 1em;
+}
+
+/* line 12, partials/_buttons.scss */
+.btn_big {
+  font-size: 1.1em;
+}
+/* line 14, partials/_buttons.scss */
+.btn_big i {
+  color: whitesmoke;
+  font-size: 1.2em;
+}
+
+/* line 20, partials/_buttons.scss */
+.btn_primary {
+  background-color: #2c93c6;
+  color: whitesmoke;
+  box-shadow: 0px -3px 0px 0px #1a4c6b inset;
+}
+/* line 24, partials/_buttons.scss */
+.btn_primary:hover, .btn_primary:active {
+  background-color: #1a4c6b;
+}
+
+/* line 30, partials/_buttons.scss */
+.btn_primary_light {
+  background-color: #a5c6d6;
+  color: #1a4c6b;
+  box-shadow: 0px -3px 0px 0px #2c93c6 inset;
+}
+/* line 34, partials/_buttons.scss */
+.btn_primary_light:hover, .btn_primary_light:active {
+  background-color: #2c93c6;
+}
+/* line 37, partials/_buttons.scss */
+.btn_primary_light i {
+  color: #1a4c6b;
+  font-size: 1em;
+}
+
+/* line 44, partials/_buttons.scss */
+.btn_secondary {
+  background-color: #681a3f;
+  color: whitesmoke;
+  box-shadow: 0px -3px 0px 0px #380721 inset;
+}
+/* line 48, partials/_buttons.scss */
+.btn_secondary:hover, .btn_secondary:active {
+  background-color: #380721;
+}
+
+/* line 53, partials/_buttons.scss */
+.btn_gallery {
+  margin: 1.5em;
+  display: block;
+}
+
 /* line 2, partials/_social.scss */
 .twitter i {
   color: #00aced;
@@ -181,158 +445,495 @@ header img {
   font-size: 2em;
 }
 
-/* line 25, partials/_social.scss */
+/* line 24, partials/_social.scss */
+#tw-widget1 {
+  background-color: whitesmoke;
+  color: #2c93c6;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin-top: 5px;
+}
+/* line 30, partials/_social.scss */
 #tw-widget1 ul {
   list-style-type: none;
-  -webkit-padding-start: 10px;
+  -webkit-padding-start: 2px;
   display: inline;
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
 }
-/* line 31, partials/_social.scss */
+/* line 36, partials/_social.scss */
 #tw-widget1 ul li {
   padding: 0px 20px;
 }
-/* line 33, partials/_social.scss */
+/* line 38, partials/_social.scss */
 #tw-widget1 ul li p {
   margin: 5px 10px;
 }
-/* line 35, partials/_social.scss */
+/* line 40, partials/_social.scss */
 #tw-widget1 ul li p.tweet {
   font-style: italic;
   margin: 10px 15px;
 }
-/* line 38, partials/_social.scss */
+/* line 43, partials/_social.scss */
 #tw-widget1 ul li p.tweet a {
   color: #1a4c6b;
+  text-decoration: none;
 }
-/* line 40, partials/_social.scss */
+/* line 46, partials/_social.scss */
 #tw-widget1 ul li p.tweet a:hover {
   color: #681a3f;
 }
-/* line 45, partials/_social.scss */
+/* line 51, partials/_social.scss */
 #tw-widget1 ul li p.interact {
   text-align: center;
 }
-/* line 47, partials/_social.scss */
+/* line 53, partials/_social.scss */
 #tw-widget1 ul li p.interact a {
   font-size: 0.8em;
-  margin: 0px 20px;
+  margin: 0px 10px;
   text-decoration: none;
   color: #8e255c;
 }
-/* line 52, partials/_social.scss */
+/* line 58, partials/_social.scss */
 #tw-widget1 ul li p.interact a:hover {
   color: #380721;
 }
-/* line 57, partials/_social.scss */
+/* line 62, partials/_social.scss */
+#tw-widget1 ul li p.interact i {
+  font-size: 1em;
+  margin-right: 0.5em;
+}
+/* line 67, partials/_social.scss */
 #tw-widget1 ul li p.timePosted {
   text-align: right;
   font-size: 0.75em;
   color: #2c93c6;
 }
-/* line 64, partials/_social.scss */
+/* line 74, partials/_social.scss */
 #tw-widget1 ul li div.user a {
   color: #1a4c6b;
   text-decoration: none;
 }
-/* line 67, partials/_social.scss */
+/* line 77, partials/_social.scss */
 #tw-widget1 ul li div.user a img {
-  display: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  float: right;
 }
 
-/* line 82, partials/_social.scss */
+/* line 92, partials/_social.scss */
+.fb-page blockquote {
+  color: whitesmoke;
+  display: none;
+}
+/* line 96, partials/_social.scss */
+.fb-page a {
+  color: #1a4c6b;
+  text-decoration: none;
+}
+
+/* line 103, partials/_social.scss */
+.twitter_badge {
+  background-color: #00aced;
+  color: whitesmoke;
+}
+/* line 104, partials/_social.scss */
+.twitter_badge a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+/* line 108, partials/_social.scss */
+.twitter_badge h3 {
+  font-size: 1em;
+  display: inline;
+  margin: 0em 0em;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+/* line 117, partials/_social.scss */
+.twitter_badge i {
+  font-size: 2em;
+}
+
+/* line 128, partials/_social.scss */
 #instafeed div a img {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-/* line 89, partials/_social.scss */
+/* line 135, partials/_social.scss */
 .insta_title {
   display: inline;
 }
-/* line 91, partials/_social.scss */
+/* line 137, partials/_social.scss */
 .insta_title span {
   font-size: 1.1em;
   display: inline-block;
   margin: 10px 0px;
 }
 
-/* line 98, partials/_social.scss */
+@media screen and (max-width: 768px) {
+  /* line 147, partials/_social.scss */
+  .insta_title span {
+    font-size: 0.8em;
+  }
+}
+/* line 153, partials/_social.scss */
 .insta_captions {
   font-size: 0.8em;
   color: #8e255c;
   display: block;
-  margin: 0px 5px 5px 8px;
+  margin: 8px 5px 5px 8px;
 }
-/* line 103, partials/_social.scss */
+/* line 158, partials/_social.scss */
 .insta_captions a {
   text-decoration: none;
   color: #681a3f;
 }
-/* line 106, partials/_social.scss */
+/* line 161, partials/_social.scss */
 .insta_captions a:hover {
   color: #8e255c;
 }
 
 /* line 1, partials/_footer.scss */
 footer {
+  bottom: 0;
   margin-top: 10px;
   background: #1a4c6b;
 }
-/* line 4, partials/_footer.scss */
+/* line 5, partials/_footer.scss */
 footer a {
   padding: 5px;
   color: whitesmoke;
   text-decoration: none;
   display: block;
 }
-/* line 9, partials/_footer.scss */
+/* line 10, partials/_footer.scss */
 footer a:hover {
   color: #e0cba2;
 }
-/* line 12, partials/_footer.scss */
+/* line 13, partials/_footer.scss */
 footer a.sub_link {
   padding: 2px;
   margin-left: 15px;
   font-size: 0.8em;
   color: #a5c6d6;
 }
-/* line 17, partials/_footer.scss */
+/* line 18, partials/_footer.scss */
 footer a.sub_link:hover {
   color: #e0cba2;
 }
-/* line 21, partials/_footer.scss */
+/* line 22, partials/_footer.scss */
 footer a.social {
   font-size: 2.4em;
   display: inline;
 }
-/* line 26, partials/_footer.scss */
+/* line 27, partials/_footer.scss */
 footer div.copy {
   color: whitesmoke;
   font-size: 0.75em;
   padding-bottom: 10px;
 }
-/* line 30, partials/_footer.scss */
+/* line 31, partials/_footer.scss */
 footer div.copy a {
   display: inline;
   color: whitesmoke;
   padding: 0px;
 }
-/* line 34, partials/_footer.scss */
+/* line 35, partials/_footer.scss */
 footer div.copy a:hover {
   color: #e0cba2;
 }
-/* line 39, partials/_footer.scss */
+/* line 40, partials/_footer.scss */
 footer h3 {
   color: whitesmoke;
   font-size: 1.1em;
   font-weight: 600;
 }
-/* line 44, partials/_footer.scss */
+/* line 45, partials/_footer.scss */
 footer span {
   display: block;
   color: #a5c6d6;
   padding: 15px 0px;
+}
+
+/* -------------------------------- 
+SIDE PANEL
+-------------------------------- */
+/* line 5, partials/_navigation_mobile.scss */
+.cd-btn {
+  width: 1.5em;
+  display: inline-block;
+}
+
+/* line 10, partials/_navigation_mobile.scss */
+.call-btn {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+/* line 16, partials/_navigation_mobile.scss */
+.cd-panel::after, .cd-panel::before {
+  content: '';
+}
+
+/* line 20, partials/_navigation_mobile.scss */
+.cd-panel {
+  position: fixed;
+  z-index: 5000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  -webkit-transition: visibility 0s 0.5s;
+  -moz-transition: visibility 0s 0.5s;
+  transition: visibility 0s 0.5s;
+}
+
+/* line 33, partials/_navigation_mobile.scss */
+.cd-panel::after {
+  /* overlay layer */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: background 0.3s 0.3s;
+  -moz-transition: background 0.3s 0.3s;
+  transition: background 0.3s 0.3s;
+}
+
+/* line 47, partials/_navigation_mobile.scss */
+.cd-panel.is-visible {
+  visibility: visible;
+  -webkit-transition: visibility 0s 0s;
+  -moz-transition: visibility 0s 0s;
+  transition: visibility 0s 0s;
+}
+
+/* line 54, partials/_navigation_mobile.scss */
+.cd-panel.is-visible::after {
+  background: rgba(26, 76, 107, 0.5);
+  -webkit-transition: background 0.3s 0s;
+  -moz-transition: background 0.3s 0s;
+  transition: background 0.3s 0s;
+}
+
+/* line 61, partials/_navigation_mobile.scss */
+.cd-panel.is-visible .cd-panel-close::before {
+  -webkit-animation: cd-close-1 0.6s 0.3s;
+  -moz-animation: cd-close-1 0.6s 0.3s;
+  animation: cd-close-1 0.6s 0.3s;
+}
+
+/* line 66, partials/_navigation_mobile.scss */
+.cd-panel.is-visible .cd-panel-close::after {
+  -webkit-animation: cd-close-2 0.6s 0.3s;
+  -moz-animation: cd-close-2 0.6s 0.3s;
+  animation: cd-close-2 0.6s 0.3s;
+}
+
+@-webkit-keyframes cd-close-1 {
+  /* line 75, partials/_navigation_mobile.scss */
+  0%, 50% {
+    -webkit-transform: rotate(0);
+  }
+
+  /* line 78, partials/_navigation_mobile.scss */
+  100% {
+    -webkit-transform: rotate(45deg);
+  }
+}
+
+@-moz-keyframes cd-close-1 {
+  /* line 83, partials/_navigation_mobile.scss */
+  0%, 50% {
+    -moz-transform: rotate(0);
+  }
+
+  /* line 86, partials/_navigation_mobile.scss */
+  100% {
+    -moz-transform: rotate(45deg);
+  }
+}
+
+@keyframes cd-close-1 {
+  /* line 91, partials/_navigation_mobile.scss */
+  0%, 50% {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  /* line 98, partials/_navigation_mobile.scss */
+  100% {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+@-webkit-keyframes cd-close-2 {
+  /* line 107, partials/_navigation_mobile.scss */
+  0%, 50% {
+    -webkit-transform: rotate(0);
+  }
+
+  /* line 110, partials/_navigation_mobile.scss */
+  100% {
+    -webkit-transform: rotate(-45deg);
+  }
+}
+
+@-moz-keyframes cd-close-2 {
+  /* line 115, partials/_navigation_mobile.scss */
+  0%, 50% {
+    -moz-transform: rotate(0);
+  }
+
+  /* line 118, partials/_navigation_mobile.scss */
+  100% {
+    -moz-transform: rotate(-45deg);
+  }
+}
+
+@keyframes cd-close-2 {
+  /* line 123, partials/_navigation_mobile.scss */
+  0%, 50% {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  /* line 130, partials/_navigation_mobile.scss */
+  100% {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
+
+/* line 140, partials/_navigation_mobile.scss */
+.cd-panel-container {
+  position: fixed;
+  z-index: 5000;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  background: #1a4c6b;
+  color: whitesmoke;
+  box-shadow: 2px 0px 2px #1a4c6b;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+/* line 161, partials/_navigation_mobile.scss */
+.from-right .cd-panel-container {
+  right: 0;
+  -webkit-transform: translate3d(100%, 0, 0);
+  -moz-transform: translate3d(100%, 0, 0);
+  -ms-transform: translate3d(100%, 0, 0);
+  -o-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+
+/* line 169, partials/_navigation_mobile.scss */
+.from-left .cd-panel-container {
+  left: 0;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  -o-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+/* line 177, partials/_navigation_mobile.scss */
+.is-visible .cd-panel-container {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+@media only screen and (min-width: 1180px) {
+  /* line 191, partials/_navigation_mobile.scss */
+  .cd-panel-container {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 198, partials/_navigation_mobile.scss */
+  .cd-panel-container {
+    width: 50%;
+  }
+}
+/* line 203, partials/_navigation_mobile.scss */
+.cd-panel-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /* smooth scrolling on touch devices */
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 215, partials/_navigation_mobile.scss */
+.cd-panel-content ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+/* line 219, partials/_navigation_mobile.scss */
+.cd-panel-content ul a {
+  display: block;
+  color: whitesmoke;
+  padding: 0px;
+  text-decoration: none;
+  box-shadow: 0px -1px 0px 0px #a5c6d6 inset;
+}
+/* line 225, partials/_navigation_mobile.scss */
+.cd-panel-content ul a:hover, .cd-panel-content ul a:active {
+  background: #a5c6d6;
+  color: #1a4c6b;
+}
+/* line 229, partials/_navigation_mobile.scss */
+.cd-panel-content ul a.bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+/* line 235, partials/_navigation_mobile.scss */
+.cd-panel-content ul a li {
+  padding: 1em 2em;
+}
+/* line 237, partials/_navigation_mobile.scss */
+.cd-panel-content ul a li i {
+  font-size: 1.25em;
+  padding-left: 0.5em;
+  margin-right: 1em;
 }
 
 /*
@@ -575,8 +1176,8 @@ footer span {
 }
 @font-face {
   font-family: 'matloughnane';
-  src: url("fonts/matloughnane.eot?5115639");
-  src: url("fonts/matloughnane.eot?5115639#iefix") format("embedded-opentype"), url("fonts/matloughnane.woff?5115639") format("woff"), url("fonts/matloughnane.ttf?5115639") format("truetype"), url("fonts/matloughnane.svg?5115639#matloughnane") format("svg");
+  src: url("../css/fonts/matloughnane.eot?522662");
+  src: url("../css/fonts/matloughnane.eot?522662#iefix") format("embedded-opentype"), url("../css/fonts/matloughnane.woff?522662") format("woff"), url("../css/fonts/matloughnane.ttf?522662") format("truetype"), url("../css/fonts/matloughnane.svg?522662#matloughnane") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -587,7 +1188,7 @@ footer span {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'matloughnane';
-    src: url('fonts/matloughnane.svg?5115639#matloughnane') format('svg');
+    src: url('../css/fonts/matloughnane.svg?522662#matloughnane') format('svg');
   }
 }
 */
@@ -613,202 +1214,361 @@ footer span {
   margin-left: .2em;
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-/* line 53, partials/_matloughnane.scss */
+/* line 57, partials/_matloughnane.scss */
 .icon-facebook-squared:before {
   content: '\e800';
 }
 
 /* '' */
-/* line 54, partials/_matloughnane.scss */
+/* line 58, partials/_matloughnane.scss */
 .icon-facebook:before {
   content: '\e801';
 }
 
 /* '' */
-/* line 55, partials/_matloughnane.scss */
+/* line 59, partials/_matloughnane.scss */
 .icon-linkedin-squared:before {
   content: '\e802';
 }
 
 /* '' */
-/* line 56, partials/_matloughnane.scss */
+/* line 60, partials/_matloughnane.scss */
 .icon-linkedin:before {
   content: '\e803';
 }
 
 /* '' */
-/* line 57, partials/_matloughnane.scss */
+/* line 61, partials/_matloughnane.scss */
 .icon-instagramm:before {
   content: '\e804';
 }
 
 /* '' */
-/* line 58, partials/_matloughnane.scss */
+/* line 62, partials/_matloughnane.scss */
 .icon-gplus:before {
   content: '\e805';
 }
 
 /* '' */
-/* line 59, partials/_matloughnane.scss */
+/* line 63, partials/_matloughnane.scss */
 .icon-gplus-squared:before {
   content: '\e806';
 }
 
 /* '' */
-/* line 60, partials/_matloughnane.scss */
+/* line 64, partials/_matloughnane.scss */
 .icon-tumblr:before {
   content: '\e807';
 }
 
 /* '' */
-/* line 61, partials/_matloughnane.scss */
+/* line 65, partials/_matloughnane.scss */
 .icon-tumblr-squared:before {
   content: '\e808';
 }
 
 /* '' */
-/* line 62, partials/_matloughnane.scss */
+/* line 66, partials/_matloughnane.scss */
 .icon-youtube-play:before {
   content: '\e809';
 }
 
 /* '' */
-/* line 63, partials/_matloughnane.scss */
+/* line 67, partials/_matloughnane.scss */
 .icon-youtube:before {
   content: '\e80a';
 }
 
 /* '' */
-/* line 64, partials/_matloughnane.scss */
+/* line 68, partials/_matloughnane.scss */
 .icon-vimeo-squared:before {
   content: '\e80b';
 }
 
 /* '' */
-/* line 65, partials/_matloughnane.scss */
+/* line 69, partials/_matloughnane.scss */
 .icon-twitter-squared:before {
   content: '\e80c';
 }
 
 /* '' */
-/* line 66, partials/_matloughnane.scss */
+/* line 70, partials/_matloughnane.scss */
 .icon-twitter:before {
   content: '\e80d';
 }
 
 /* '' */
-/* line 67, partials/_matloughnane.scss */
+/* line 71, partials/_matloughnane.scss */
 .icon-pinterest-squared:before {
   content: '\e80e';
 }
 
 /* '' */
-/* line 68, partials/_matloughnane.scss */
+/* line 72, partials/_matloughnane.scss */
 .icon-pinterest-circled:before {
   content: '\e80f';
 }
 
 /* '' */
-/* line 69, partials/_matloughnane.scss */
+/* line 73, partials/_matloughnane.scss */
 .icon-github-circled:before {
   content: '\e810';
 }
 
 /* '' */
-/* line 70, partials/_matloughnane.scss */
+/* line 74, partials/_matloughnane.scss */
 .icon-menu:before {
   content: '\e811';
 }
 
 /* '' */
-/* line 71, partials/_matloughnane.scss */
+/* line 75, partials/_matloughnane.scss */
 .icon-export:before {
   content: '\e812';
 }
 
 /* '' */
-/* line 72, partials/_matloughnane.scss */
+/* line 76, partials/_matloughnane.scss */
 .icon-export-alt:before {
   content: '\e813';
 }
 
 /* '' */
-/* line 73, partials/_matloughnane.scss */
+/* line 77, partials/_matloughnane.scss */
 .icon-info-circled:before {
   content: '\e814';
 }
 
 /* '' */
-/* line 74, partials/_matloughnane.scss */
+/* line 78, partials/_matloughnane.scss */
 .icon-info:before {
   content: '\e815';
 }
 
 /* '' */
-/* line 75, partials/_matloughnane.scss */
+/* line 79, partials/_matloughnane.scss */
 .icon-home:before {
   content: '\e816';
 }
 
 /* '' */
-/* line 76, partials/_matloughnane.scss */
+/* line 80, partials/_matloughnane.scss */
 .icon-angle-double-right:before {
   content: '\e817';
 }
 
 /* '' */
-/* line 77, partials/_matloughnane.scss */
+/* line 81, partials/_matloughnane.scss */
 .icon-angle-double-left:before {
   content: '\e818';
 }
 
 /* '' */
-/* line 78, partials/_matloughnane.scss */
+/* line 82, partials/_matloughnane.scss */
 .icon-calendar:before {
   content: '\e819';
 }
 
 /* '' */
-/* line 79, partials/_matloughnane.scss */
+/* line 83, partials/_matloughnane.scss */
 .icon-camera:before {
   content: '\e81a';
 }
 
 /* '' */
-/* line 80, partials/_matloughnane.scss */
+/* line 84, partials/_matloughnane.scss */
 .icon-camera-alt:before {
   content: '\e81b';
 }
 
 /* '' */
-/* line 81, partials/_matloughnane.scss */
+/* line 85, partials/_matloughnane.scss */
 .icon-rss:before {
   content: '\e81c';
 }
 
 /* '' */
-/* line 82, partials/_matloughnane.scss */
+/* line 86, partials/_matloughnane.scss */
 .icon-rss-squared:before {
   content: '\e81d';
 }
 
 /* '' */
-/* line 83, partials/_matloughnane.scss */
+/* line 87, partials/_matloughnane.scss */
 .icon-thumbs-up-alt:before {
   content: '\e81e';
 }
 
 /* '' */
-/* line 84, partials/_matloughnane.scss */
+/* line 88, partials/_matloughnane.scss */
 .icon-thumbs-up:before {
   content: '\e81f';
 }
 
 /* '' */
+/* line 89, partials/_matloughnane.scss */
+.icon-comment:before {
+  content: '\e820';
+}
+
+/* '' */
+/* line 90, partials/_matloughnane.scss */
+.icon-quote-left:before {
+  content: '\e821';
+}
+
+/* '' */
+/* line 91, partials/_matloughnane.scss */
+.icon-phone-squared:before {
+  content: '\e822';
+}
+
+/* '' */
+/* line 92, partials/_matloughnane.scss */
+.icon-phone:before {
+  content: '\e823';
+}
+
+/* '' */
+/* line 93, partials/_matloughnane.scss */
+.icon-users:before {
+  content: '\e824';
+}
+
+/* '' */
+/* line 94, partials/_matloughnane.scss */
+.icon-user:before {
+  content: '\e825';
+}
+
+/* '' */
+/* line 95, partials/_matloughnane.scss */
+.icon-heart:before {
+  content: '\e826';
+}
+
+/* '' */
+/* line 96, partials/_matloughnane.scss */
+.icon-music:before {
+  content: '\e827';
+}
+
+/* '' */
+/* line 97, partials/_matloughnane.scss */
+.icon-location:before {
+  content: '\e828';
+}
+
+/* '' */
+/* line 98, partials/_matloughnane.scss */
+.icon-arrows-cw:before {
+  content: '\e829';
+}
+
+/* '' */
+/* line 99, partials/_matloughnane.scss */
+.icon-video:before {
+  content: '\e82a';
+}
+
+/* '' */
+/* line 100, partials/_matloughnane.scss */
+.icon-videocam:before {
+  content: '\e82b';
+}
+
+/* '' */
+/* line 101, partials/_matloughnane.scss */
+.icon-picture:before {
+  content: '\e82c';
+}
+
+/* '' */
+/* line 102, partials/_matloughnane.scss */
+.icon-mail:before {
+  content: '\e82d';
+}
+
+/* '' */
+/* line 103, partials/_matloughnane.scss */
+.icon-cog-alt:before {
+  content: '\e82e';
+}
+
+/* '' */
+/* line 104, partials/_matloughnane.scss */
+.icon-sliders:before {
+  content: '\e82f';
+}
+
+/* '' */
+/* line 105, partials/_matloughnane.scss */
+.icon-cab:before {
+  content: '\e830';
+}
+
+/* '' */
+/* line 106, partials/_matloughnane.scss */
+.icon-food:before {
+  content: '\e831';
+}
+
+/* '' */
+/* line 107, partials/_matloughnane.scss */
+.icon-soccer-ball:before {
+  content: '\e832';
+}
+
+/* '' */
+/* line 108, partials/_matloughnane.scss */
+.icon-anchor:before {
+  content: '\e833';
+}
+
+/* '' */
+/* line 109, partials/_matloughnane.scss */
+.icon-lifebuoy:before {
+  content: '\e834';
+}
+
+/* '' */
+/* line 110, partials/_matloughnane.scss */
+.icon-download-cloud:before {
+  content: '\e835';
+}
+
+/* '' */
+/* line 111, partials/_matloughnane.scss */
+.icon-share-squared:before {
+  content: '\e836';
+}
+
+/* '' */
+/* line 112, partials/_matloughnane.scss */
+.icon-star:before {
+  content: '\e837';
+}
+
+/* '' */
+/* line 113, partials/_matloughnane.scss */
+.icon-star-empty:before {
+  content: '\e838';
+}
+
+/* '' */
+/* line 114, partials/_matloughnane.scss */
+.icon-reply:before {
+  content: '\e839';
+}
+
+/* '' */
 /* Slider */
 /* line 3, partials/_slick.scss */
 .slick-slider {
@@ -1064,7 +1824,7 @@ footer span {
 }
 /* line 143, partials/_slick-theme.scss */
 .slick-dots li {
-  z-index: 8000;
+  z-index: 3000;
   position: relative;
   display: inline-block;
   width: 20px;
