@@ -47,6 +47,10 @@
 							color: $secondary;
 						}
 					}
+					img {
+						width: 5%;
+						margin: 0px 5px;
+					}
 				}
 				&.interact {
 					text-align: center;
@@ -88,14 +92,25 @@
 // ON CONTACT PAGE
 
 // FACEBOOK
-.fb-page {
-	blockquote {
-		color: $background;
-		display: none;
-	}
+.fb_page {
+	background-color: $facebook_bg;
+	color: $background;
 	a {
-		color: $primary_dull;
+		color: $background;
 		text-decoration: none;
+	}
+	h3 {
+		font-size: 1em;
+		display: inline; 
+		margin: 0em 0em;
+		-webkit-margin-before: 0em;
+  		-webkit-margin-after: 0em;
+	}
+	i {
+		font-size: 2em;
+		&.icon-angle-double-right {
+			font-size: 1em;
+		}
 	}
 }
 

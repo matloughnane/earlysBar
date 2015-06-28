@@ -1,0 +1,33 @@
+.gallery_container {
+  width: 100%;
+}
+
+.my-gallery {
+  width: 95%;
+  margin: 0 auto;
+  margin-left: 8%;
+}
+.my-gallery img {
+  width: 100%;
+  height: auto;
+}
+.my-gallery figure {
+  display: block;
+  float: left;
+  margin: 0 5px 5px 0;
+  width: 150px;
+}
+.my-gallery figcaption {
+  display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .my-gallery {
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 3%;
+  }
+
+}

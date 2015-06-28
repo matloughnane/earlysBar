@@ -1,8 +1,10 @@
 .btn {
+	display: inline-block;
 	font-size: 0.9em;
 	text-decoration: none;
 	padding: 8px 10px;
 	border-radius: 3px;
+	margin: 3px;
 	i {
 		color: $background;
 		font-size: 1em;

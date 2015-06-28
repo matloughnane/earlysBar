@@ -1,36 +1,52 @@
 <!DOCTYPE html5>
-<html>
-
+<html itemscope itemtype="http://schema.org/Article">
 <head>
 	<!-- META TAGS -->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-
-	<title>About Us | Early's Bar</title>
+	<meta name="keywords"  content="Earlys, Early's Bar, About Us, Arainn Mhor, Arranmore, history, legends, music, food, drink, Jerrys" />
+	<title>About Us</title>
 	<!-- STYLES -->
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-	
-	<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-
 	<link rel="icon" type="image/png" href="assets/img/favicon.png">
-
 		<!-- SCRIPTS -->
-	<script type="text/javascript" src="assets/js/jquery-1.11.2.min.js"></script>
+	<meta name="description" content="Find out about the legends and history of Early's bar from as far back as 1588. Learn about Arranmore, our memories and the future of the bar." />
 
+	<!-- Schema.org markup for Google+ -->
+	<meta itemprop="name" content="About Early's Bar">
+	<meta itemprop="description" content="Find out about the legends and history of Early's bar from as far back as 1588. Learn about Arranmore, our memories and the future of the bar.">
+	<meta itemprop="image" content="http://earlysbar.com/assets/img/meta/about-01.png">
+
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@EarlysBar">
+	<meta name="twitter:title" content="About Early's Bar">
+	<meta name="twitter:description" content="Find out about the legends and history of Early's bar from as far back as 1588. Learn about Arranmore, our memories and the future of the bar.">
+	<meta name="twitter:creator" content="@EarlysBar">
+	<!-- Twitter summary card with large image must be at least 280x150px -->
+	<meta name="twitter:image:src" content="http://earlysbar.com/assets/img/meta/about-01.png">
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="About Early's Bar" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="http://earlysbar.com/about.html" />
+	<meta property="og:image" content="http://earlysbar.com/assets/img/meta/about-01.png" />
+	<meta property="og:description" content="Find out about the legends and history of Early's bar from as far back as 1588. Learn about Arranmore, our memories and the future of the bar." />
+	
 </head>
 
 <body>
 	<!-- HEADER -->
 	<header>
-		<img id="logo" src="assets/img/earlys_logo.svg">
+		<img id="logo" class="doubleTap" src="assets/img/earlys_logo.svg">
 		<nav class="shadow1">
 			<a href="#" class="cd-btn btn_nav show-on-mobiles"><i class="icon-menu"></i></a>
 			<a href="tel:+353749520515" class="btn_nav show-on-mobiles call-btn"><i class="icon-phone"></i></a>
 			<ul class="hide-on-mobiles">
-				<a href="/"><li>Home</li></a>
+				<a href="index.html"><li>Home</li></a>
 				<a href="about.html"><li class="active">About</li></a>
 				<a href="#" ><li class="logo">Early's Bar</li></a>
-				<a href="news.html"><li>News</li></a>
+				<a href="http://news.earlysbar.com"><li>News</li></a>
 				<a href="contact.html"><li>Contact</li></a>
 			</ul>
 		</nav>
@@ -42,13 +58,14 @@
         <ul>
           <a href="index.html"><li>Home</li></a>
           <a href="about.html"><li>About</li></a>
-          <a href="news.html"><li>News</li></a>
+          <a href="http://news.earlysbar.com"><li>News</li></a>
           <a href="contact.html"><li>Contact</li></a>
         </ul>
       </div> <!-- cd-panel-content -->
     </div> <!-- cd-panel-container -->
   </div> <!-- cd-panel -->
-
+	<span id="starboard" class="easter_egg starboard"></span>
+	<span id="port" class="easter_egg port"></span>
 	<!-- MAIN CONTENT -->
 	<main class="wrap">
 		<!-- BANNER IMAGE -->
@@ -56,10 +73,10 @@
 		<nav class="grid alternative">	
 			<ul>
 				<a href="#"><li class="active">About Us</li></a>
-				<a href="pages/about/earlyslive.html"><li>Early's Live</li></a>
-				<a href="pages/about/foodanddrink.html"><li>Food & Drink</li></a>
-				<a href="pages/about/theisland.html"><li>The Island</li></a>
-				<a href="pages/about/gallery.html"><li>Gallery</li></a>
+				<a href="about/earlyslive.html"><li>Early's Live</li></a>
+				<a href="about/foodanddrink.html"><li>Food & Drink</li></a>
+				<a href="about/theisland.html"><li>The Island</li></a>
+				<a href="about/gallery.html"><li>Gallery</li></a>
 			</ul>
 		</nav>
 
@@ -67,7 +84,7 @@
 		<section class="grid padded">
 			<div class="unit w-1-1 card shadow1">
 				<h2>About Early's Bar</h2>
-				<h4><em>Early's Bar has been in the Early family for more than four decades and it is the oldest licensed public house on Arranmore Island with records dating back to at least the 1830's.</em></h4>
+				<h3 class="align-center"><em>Early's Bar has been in the Early family for more than four decades and it is the oldest licensed public house on Arranmore Island with records dating back to at least the 1830's.</em></h3>
 				<div class="center-on-mobiles">
 					<img class="text_inline pull-right shadow1" src="assets/img/bar_exterior.jpg" alt="An exterior shot of the Arranmore's Early's Bar.">
 				</div>
@@ -86,13 +103,21 @@
 				<p>In 1990, Andrew and Mary retired from running the bar when Andrew's son Jerry returned home from America with his wife Pat to continue on what Andrew and Mary established. Jerry and Pat quickly put their own stamp on the premises by carrying out more renovations to cater for a larger clientele ranging from the youngest to oldest. Today, as well as visiting bands entertaining the customers and discos in the lounge, Jerry and his good friend Robert Pfeiffer from Holland form an entertaining two piece act playing music to suit all ages.</p>
 
 				<div class="center-on-mobiles">
-					<img class="text_inline pull-right smaller shadow1" src="assets/img/jerry_pat.jpg" alt="Jerry and Pat, the current owners of Early's Bar.">
+					<img class="text_inline pull-right resp medium shadow1" src="assets/img/family.jpg" alt="Jerry, Pat and family, the current owners of Early's Bar.">
 				</div>
 
 				<h3 class="secondary_title">2010s</h3>
-				<p>Early's Bar continues to evolve and Jerry and Pat's children, Kayla, Aisling and Paul are now part of the staff. On the 29th of December 2010, Jerry and Pat celebrated twenty years as proprietors of Early's Bar, holding a party in the bar which is still being talked about today. Along with Jerry and Pat's families, much of the island and people from much further afield joined to celebrate with them and the staff they employed over the years, forty in total, were also present. Many funny stories and incidents were recalled and memories shared.</p>
+				<p>Early's Bar continues to evolve as Jerry and Pat's children, Kayla, Aisling and Paul are now essential to the running of the bar. Over the years many of our full and part time staff have been connected to our family and added to the friendly atmosphere, as well as working hard!</p>
 
-				<p>You are always assured of a warm island welcome at Early's Bar, so call in and say hello and create some happy memories of your own. We look forward to seeing you.</p>
+				<p>The bar is continually changing, most recently in Spring 2015 when the whole bar was redecorated and adapted to embrace our local sea and fishing heritage. </p>
+				
+				<p>It is not uncommon to see the biggest and best Donegal bands grace the stage in Early’s Bar, not least when local band Mojo Gogo established and ran a two day rock festival in conjunction with Jerry Early and Early’s Bar. AranMojo ran for 3 years and provided a lot of artists the space to showcase the best of the local original talent. Some of the bands who will be gracing the stage this year are Donegal’s finest e.g. In Their Thousands, Our Native State, The Humble Earthworms to name but a few.</p>
+				
+				<p>We look forward to 2016 when we will be celebrating 50 years in business. All the Early family wish to thank you for your continued support.</p>
+
+				<h3 class="align-center">
+					<em>You are always assured of a warm island welcome at Early's Bar, so call in and say hello and create some happy memories of your own. We look forward to seeing you.</em>
+				</h3>
 
 			</div>
 			<a href="directions.html" class="unit w-1-4 align-center right_half no-gutters-mobile">
@@ -100,19 +125,19 @@
 					<h3>How to get here<i class="icon-angle-double-right"></i></h3>
 				</div>
 			</a>
-			<a href="pages/arranmorefc.html" class="unit w-1-4 align-center right_half no-gutters-mobile">
+			<a href="arranmorefc.html" class="unit w-1-4 align-center right_half no-gutters-mobile">
 				<div class="card shadow1 ">
 					<h3>Arranmore FC<i class="icon-angle-double-right"></i></h3>
 				</div>
 			</a>
-			<a href="pages/bandb.html" class="unit w-1-4 align-center right_half no-gutters-mobile">
+			<a href="bandb.html" class="unit w-1-4 align-center right_half no-gutters-mobile">
 				<div class="card shadow1 secondary">
 					<h3> B & B <i class="icon-angle-double-right"></i></h3>
 				</div>
 			</a>
-			<a href="pages/bubbleball.html" class="unit w-1-4 align-center no-gutters-mobile">
-				<div class="card shadow1 bubbles">
-					<h3>Jerry's Balls <i class="icon-angle-double-right"></i></h3>
+			<a href="bumperball.html" class="unit w-1-4 align-center no-gutters-mobile">
+				<div class="card shadow1">
+					<h3>Bumper Ball <i class="icon-angle-double-right"></i></h3>
 				</div>
 			</a>
 		</section>
@@ -124,33 +149,32 @@
 				<div class="unit w-1-3 hide-on-mobiles">
 					<a href="index.html">Home</a>
 					<a href="about.html">About</a>
-						<a class="sub_link" href="pages/about/earlyslive.html">Early's Live</a>
-						<a class="sub_link" href="pages/about/foodanddrink.html">Food & Drink</a>
-						<a class="sub_link" href="pages/about/theisland.html">The Island</a>
-						<a class="sub_link" href="pages/about/gallery.html">Gallery</a>
+						<a class="sub_link" href="about/earlyslive.html">Early's Live</a>
+						<a class="sub_link" href="about/foodanddrink.html">Food & Drink</a>
+						<a class="sub_link" href="about/theisland.html">The Island</a>
+						<a class="sub_link" href="about/gallery.html">Gallery</a>
 				</div>
 				<div class="unit w-1-3 hide-on-mobiles">				
-					<a href="news.html">News</a>
+					<a href="http://news.earlysbar.com">News</a>
 					<a href="contact.html">Contact</a>
-						<a class="sub_link" href="pages/bandb.html" target="_blank">B&B</a>
+						<a class="sub_link" href="bandb.html" target="_blank">B&B</a>
 						<a class="sub_link" href="mailto:jerryearly@hotmail.com" target="_blank">Email</a>
 						<a class="sub_link" href="tel:+353749520515">Call Us</a>
 				</div>
 				<div class="unit w-1-3 hide-on-mobiles">
 					<h3>Funtivities</h3>
 						<a class="sub_link" href="directions.html">How To Get Here</a>
-						<a class="sub_link" href="pages/bubbleball.html">Jerry's Balls</a>
-						<a class="sub_link" href="pages/arranmorefc.html">Arranmore FC</a>
+						<a class="sub_link" href="bumperball.html">Bumper Ball</a>
+						<a class="sub_link" href="arranmorefc.html">Arranmore Utd FC</a>
 				</div>
 			</div>
 			<div class="unit w-1-3 align-center">
 				<h3>Share</h3>
 				<span>Help us spread the word about the bar.</span>
 				<div class="align-center">
-					<a class="social" href="#"><i class="icon-facebook-squared"></i></a>
-					<a class="social" href="#"><i class="icon-twitter"></i></a>
-					<a class="social" href="#"><i class="icon-gplus"></i></a>
-					<a class="social" href="#"><i class="icon-instagramm"></i></a>
+					<a class="social" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://earlysbar.com"><i class="icon-facebook-squared"></i></a>
+					<a class="social" target="_blank" href="https://twitter.com/home?status=Check%20out%20http://earlysbar.com%20from%20%40EarlysBar"><i class="icon-twitter"></i></a>
+					<a class="social" target="_blank" href="https://plus.google.com/share?url=http://earlysbar.com"><i class="icon-gplus"></i></a>
 				</div>
 			</div>
 		</div>
@@ -160,6 +184,7 @@
 	</footer>
 
 	<!-- LAZY LOAD -->
+	<script type="text/javascript" src="assets/js/jquery-1.11.2.min.js"></script>
 	<script src="assets/js/sidepanel.js"></script>
 
 </body>

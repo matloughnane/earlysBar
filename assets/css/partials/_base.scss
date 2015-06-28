@@ -4,7 +4,7 @@
 
 body {
 	background-color: $primary_light;
-	font-family: Trebuchet MS, Ubuntu, sans-serif;
+	font-family: Trebuchet MS, sans-serif;
 }
 
 ::selection{
@@ -31,7 +31,12 @@ p {
 
 a {
  	text-decoration: none;
- 	color: $primary; 
+ 	color: $primary;
+ 	div {
+ 		h3 {
+ 			font-size: 1em;
+ 		}
+ 	}
 }
 
 p {
@@ -47,10 +52,15 @@ p {
 
  em {
  	color: $secondary;
- 	margin: 10px 40px;
+ 	text-align: center;
  }
 
  .secondary_title {
+ 	color: $secondary;
+ }
+
+ .uh_oh {
+ 	font-size: 15em;
  	color: $secondary;
  }
 
@@ -65,6 +75,10 @@ img {
 		&.smaller {
 			max-width: 250px;
 			margin: 2em;
+		}
+		&.medium {
+			max-width: 330px;
+			margin: 1em;
 		}
 	}
 	&.pull-right {
@@ -143,11 +157,6 @@ blockquote {
 	margin-bottom: 8px;
 }
 
-.bubbles {
-	background: url(../img/bubbles.png) $background center center no-repeat ;
-	background-size: cover;
-}
-
 .primary {
 	background: $primary_dull;
 	color: $background;
@@ -199,6 +208,103 @@ blockquote {
 		margin: 10px 0px 0px 0px;
 	}
 }
+
+.easter_egg {
+	display: none;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: none;
+	position: absolute;
+	font-size: 20px;
+	padding: 15px 20px;
+	text-align: center;
+	text-decoration: none;
+	z-index:500;
+	&.starboard{
+		left: 0;
+		background-color: #00B16A;
+			-webkit-animation: glowing_starboard 3000ms infinite;
+			-moz-animation: glowing_starboard 3000ms infinite;
+			-o-animation: glowing_starboard 3000ms infinite;
+			animation: glowing_starboard 3000ms infinite;
+	}
+	&.port {
+		right: 0;
+		background-color:#EF5350;
+			-webkit-animation: glowing_port 3000ms infinite;
+			-moz-animation: glowing_port 3000ms infinite;
+			-o-animation: glowing_port 3000ms infinite;
+			animation: glowing_port 3000ms infinite;
+	}
+}
+
+// GREEN
+// #00B16A to 
+// #00E676
+@keyframes glowing_starboard {
+  0% { background-color: #00B16A; box-shadow: 0 0 3px #00B16A; }
+  50% { background-color: #00E676; box-shadow: 2px 2px 10px #00E676; }
+  100% { background-color: #00B16A; box-shadow: 0 0 3px #00B16A; }
+}
+
+@-webkit-keyframes glowing_starboard {
+  0% { background-color: #00B16A; -webkit-box-shadow: 0 0 3px #00B16A; }
+  50% { background-color: #00E676; -webkit-box-shadow: 2px 2px 10px #00E676; }
+  100% { background-color: #00B16A; -webkit-box-shadow: 0 0 3px #00B16A; }
+}
+
+@-moz-keyframes glowing_starboard {
+  0% { background-color: #00B16A; -moz-box-shadow: 0 0 3px #00B16A; }
+  50% { background-color: #00E676; -moz-box-shadow: 2px 2px 10px #00E676; }
+  100% { background-color: #00B16A; -moz-box-shadow: 0 0 3px #00B16A; }
+}
+
+@-o-keyframes glowing_starboard {
+  0% { background-color: #00B16A; box-shadow: 0 0 3px #00B16A; }
+  50% { background-color: #00E676; box-shadow: 2px 2px 10px #00E676; }
+  100% { background-color: #00B16A; box-shadow: 0 0 3px #00B16A; }
+}
+
+@keyframes glowing_starboard {
+  0% { background-color: #00B16A; box-shadow: 0 0 3px #00B16A; }
+  50% { background-color: #00E676; box-shadow: 2px 2px 10px #00E676; }
+  100% { background-color: #00B16A; box-shadow: 0 0 3px #00B16A; }
+}
+
+// PORT
+// #EF5350
+// TO #FF1744
+
+@keyframes glowing_port {
+  0% { background-color: #EF5350; box-shadow: 0 0 3px #EF5350; }
+  50% { background-color: #FF1744; box-shadow: -2px 2px 10px #FF1744; }
+  100% { background-color: #EF5350; box-shadow: 0 0 3px #EF5350; }
+}
+
+@-webkit-keyframes glowing_port {
+  0% { background-color: #EF5350; -webkit-box-shadow: 0 0 3px #EF5350; }
+  50% { background-color: #FF1744; -webkit-box-shadow: -2px 2px 10px #FF1744; }
+  100% { background-color: #EF5350; -webkit-box-shadow: 0 0 3px #EF5350; }
+}
+
+@-moz-keyframes glowing_port {
+  0% { background-color: #EF5350; -moz-box-shadow: 0 0 3px #EF5350; }
+  50% { background-color: #FF1744; -moz-box-shadow: -2px 2px 10px #FF1744; }
+  100% { background-color: #EF5350; -moz-box-shadow: 0 0 3px #EF5350; }
+}
+
+@-o-keyframes glowing_port {
+  0% { background-color: #EF5350; box-shadow: 0 0 3px #EF5350; }
+  50% { background-color: #FF1744; box-shadow: -2px 2px 10px #FF1744; }
+  100% { background-color: #EF5350; box-shadow: 0 0 3px #EF5350; }
+}
+
+@keyframes glowing_port {
+  0% { background-color: #EF5350; box-shadow: 0 0 3px #EF5350; }
+  50% { background-color: #FF1744; box-shadow: -2px 2px 10px #FF1744; }
+  100% { background-color: #EF5350; box-shadow: 0 0 3px #EF5350; }
+}
+
 // SHADOWS
 .shadow1 {
 	box-shadow: $shadow1;
