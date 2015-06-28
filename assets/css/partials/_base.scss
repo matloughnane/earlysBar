@@ -77,7 +77,7 @@ img {
 			margin: 2em;
 		}
 		&.medium {
-			max-width: 330px;
+			max-width: 400px;
 			margin: 1em;
 		}
 	}
@@ -96,6 +96,10 @@ img {
 		&.text_inline {
 			max-width: 100%;
 			display: inline-block;
+			&.medium {
+				max-width: 300px;
+				margin: 1em;
+			}
 		}
 		&.pull-right,&.pull-left {
 			margin: 5px;
