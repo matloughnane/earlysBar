@@ -6,15 +6,11 @@ nav {
 	ul {
 		text-align: center;
 		-webkit-padding-start: 0px;
-		a {
-			color: $background;
-			li {
-				width: 100px;
-				display: inline-block;
-				list-style-type: none;
-				text-transform: uppercase;
-				padding: 25px 0px;
-				// border: 1px solid red;
+		li {
+			width: 100px;
+			display: inline-block;
+			list-style-type: none;
+			text-transform: uppercase;
 				&.logo {
 					width: 275px;
 					color: $primary_dull;
@@ -28,6 +24,10 @@ nav {
 				&:active {
 					background-color: $primary;
 				}
+			a {	
+				display: block;
+				padding: 25px 0px;
+				color: $background;
 			}
 		}
 	}
@@ -48,6 +48,7 @@ nav.alternative{
 		text-align: center;
 		-webkit-padding-start: 0px;
 		a {
+			color: $background;
 			li {
 				width: 100px;
 				display: inline-block;

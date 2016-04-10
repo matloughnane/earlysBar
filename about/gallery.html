@@ -1,11 +1,11 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html itemscope itemtype="http://schema.org/Article">
 <head>
 	<!-- META TAGS -->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
 	<meta name="keywords"  content="Earlys, Early's Bar, About Us, Arainn Mhor, Arranmore, history, photos, Jerrys" />
-	<title>Gallery</title>
+	<title>Gallery | Early's Bar</title>
 	<!-- STYLES -->
 	<link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/gallery/photoswipe.css">
@@ -25,23 +25,23 @@
 	<!-- Open Graph data -->
 	<meta property="og:title" content="Early's Bar" />
 	<meta property="og:type" content="article" />
-	<meta property="og:url" content="http://earlysbar.com/about/gallery.html" />
+	<meta property="og:url" content="http://earlysbar.com/about/gallery" />
 	<meta property="og:image" content="http://earlysbar.com/assets/img/social_media.jpg" />
 	<meta property="og:description" content="Check out all the latest photos from Early's bar and help contribute to our ever growing gallery of photos from your favourite bar!" />
 </head>
 <body>
-	<!-- HEADER -->
+  	<!-- HEADER -->
 	<header>
-		<img id="logo" class="doubleTap" src="assets/img/earlys_logo.svg">
+		<img id="logo" class="doubleTap" src="../assets/img/earlys_logo.svg" alt="Early's Bar, Arranmore Island logo">
 		<nav class="shadow1">
 			<a href="#" class="cd-btn btn_nav show-on-mobiles"><i class="icon-menu"></i></a>
 			<a href="tel:+353749520515" class="btn_nav show-on-mobiles call-btn"><i class="icon-phone"></i></a>
 			<ul class="hide-on-mobiles">
-				<a href="../"><li>Home</li></a>
-				<a href="../about.html"><li class="active">About</li></a>
-				<a href="#" ><li class="logo">Early's Bar</li></a>
-				<a href="http://news.earlysbar.com"><li>News</li></a>
-				<a href="../contact.html"><li>Contact</li></a>
+				<li><a href="../" class="active">Home</a></li>
+				<li><a href="../about-us">About</a></li>
+				<li class="logo"><a href="#">Early's Bar</a></li>
+				<li><a href="http://news.earlysbar.com">News</a></li>
+				<li><a href="../contact">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -50,14 +50,19 @@
     <div class="cd-panel-container">
       <div class="cd-panel-content">
         <ul>
-          <a href="../index.html"><li>Home</li></a>
-          <a href="../about.html"><li>About</li></a>
-          <a href="http://news.earlysbar.com"><li>News</li></a>
-          <a href="../contact.html"><li>Contact</li></a>
+			<li><a href="../" class="active">Home</a></li>
+			<li><a href="../about-us">About</a></li>
+				<li class="sub"><a href="../about/earlyslive">Early's Live</a></li>
+				<li class="sub"><a href="../about/foodanddrink">Food and Drink</a></li>
+				<li class="sub"><a href="../about/theisland">The Island</a></li>
+				<li class="sub"><a href="../about/gallery">Gallery</a></li>
+			<li><a href="http://news.earlysbar.com">News</a></li>
+			<li><a href="..//contact">Contact</a></li>
         </ul>
       </div> <!-- cd-panel-content -->
     </div> <!-- cd-panel-container -->
   </div> <!-- cd-panel -->
+  
 	<span id="starboard" class="easter_egg starboard"></span>
 	<span id="port" class="easter_egg port"></span>
 	<!-- MAIN CONTENT -->
@@ -66,11 +71,11 @@
 		<br>
 		<nav class="grid alternative">	
 			<ul>
-				<a href="../about.html"><li>About Us</li></a>
-				<a href="earlyslive.html"><li>Early's Live</li></a>
-				<a href="foodanddrink.html"><li>Food & Drink</li></a>
-				<a href="theisland.html"><li>The Island</li></a>
-				<a href="gallery.html"><li class="active">Gallery</li></a>
+				<a href="../about-us"><li>About Us</li></a>
+				<a href="/about/earlyslive"><li>Early's Live</li></a>
+				<a href="/about/foodanddrink"><li>Food & Drink</li></a>
+				<a href="/about/theisland"><li>The Island</li></a>
+				<a href="/about/gallery"><li class="active">Gallery</li></a>
 			</ul>
 		</nav>
 
@@ -319,117 +324,123 @@
 			</div>
 		</div>
 
-	<!-- Root element of PhotoSwipe. Must have class pswp. -->
-	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-	    <!-- Background of PhotoSwipe. 
-	         It's a separate element, as animating opacity is faster than rgba(). -->
-	    <div class="pswp__bg"></div>
-	    <!-- Slides wrapper with overflow:hidden. -->
-	    <div class="pswp__scroll-wrap">
+		<!-- Root element of PhotoSwipe. Must have class pswp. -->
+		<div class="pswp" tab="-1" role="dialog" aria-hidden="true">
+		    <!-- Background of PhotoSwipe. 
+		         It's a separate element, as animating opacity is faster than rgba(). -->
+		    <div class="pswp__bg"></div>
+		    <!-- Slides wrapper with overflow:hidden. -->
+		    <div class="pswp__scroll-wrap">
 
-	        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
-	        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
-	        <div class="pswp__container">
-	            <div class="pswp__item"></div>
-	            <div class="pswp__item"></div>
-	            <div class="pswp__item"></div>
-	        </div>
+		        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+		        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+		        <div class="pswp__container">
+		            <div class="pswp__item"></div>
+		            <div class="pswp__item"></div>
+		            <div class="pswp__item"></div>
+		        </div>
 
-	        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-	        <div class="pswp__ui pswp__ui--hidden">
-	            <div class="pswp__top-bar">
+		        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+		        <div class="pswp__ui pswp__ui--hidden">
+		            <div class="pswp__top-bar">
 
-	                <!--  Controls are self-explanatory. Order can be changed. -->
-	                <div class="pswp__counter"></div>
-	                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-	                <button class="pswp__button pswp__button--share" title="Share"></button>
-	                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-	                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+		                <!--  Controls are self-explanatory. Order can be changed. -->
+		                <div class="pswp__counter"></div>
+		                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+		                <button class="pswp__button pswp__button--share" title="Share"></button>
+		                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+		                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
 
-	                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-	                <!-- element will get class pswp__preloader--active when preloader is running -->
-	                <div class="pswp__preloader">
-	                    <div class="pswp__preloader__icn">
-	                      <div class="pswp__preloader__cut">
-	                        <div class="pswp__preloader__donut"></div>
-	                      </div>
-	                    </div>
-	                </div>
-	            </div>
+		                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+		                <!-- element will get class pswp__preloader--active when preloader is running -->
+		                <div class="pswp__preloader">
+		                    <div class="pswp__preloader__icn">
+		                      <div class="pswp__preloader__cut">
+		                        <div class="pswp__preloader__donut"></div>
+		                      </div>
+		                    </div>
+		                </div>
+		            </div>
 
-	            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-	                <div class="pswp__share-tooltip"></div> 
-	            </div>
+		            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+		                <div class="pswp__share-tooltip"></div> 
+		            </div>
 
-	            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-	            </button>
+		            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+		            </button>
 
-	            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-	            </button>
+		            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+		            </button>
 
-	            <div class="pswp__caption">
-	                <div class="pswp__caption__center"></div>
-	            </div>
-	          </div>
-	        </div>
+		            <div class="pswp__caption">
+		                <div class="pswp__caption__center"></div>
+		            </div>
+		          </div>
+		        </div>
+			</div>
 		</div>
-	</div>
 
-			<a href="../directions.html" class="unit w-1-4 align-center right_half no-gutters-mobile">
+			<a href="../directions" class="unit w-1-4 align-center right_half no-gutters-mobile">
 				<div class="card shadow1 primary">
 					<h3>How to get here<i class="icon-angle-double-right"></i></h3>
 				</div>
 			</a>
-			<a href="../arranmorefc.html" class="unit w-1-4 align-center right_half no-gutters-mobile">
+			<a href="../arranmorefc" class="unit w-1-4 align-center right_half no-gutters-mobile">
 				<div class="card shadow1 ">
 					<h3>Arranmore Utd FC<i class="icon-angle-double-right"></i></h3>
 				</div>
 			</a>
-			<a href="../bandb.html" class="unit w-1-4 align-center right_half no-gutters-mobile">
+			<!-- <a href="../bandb" class="unit w-1-4 align-center right_half no-gutters-mobile">
 				<div class="card shadow1 secondary">
 					<h3> B & B <i class="icon-angle-double-right"></i></h3>
 				</div>
+			</a> -->
+			<a href="/about/earlyslive" class="unit w-1-4 align-center right_half no-gutters-mobile">
+				<div class="card shadow1 secondary">
+					<h3> Early's Live <i class="icon-angle-double-right"></i></h3>
+				</div>
 			</a>
-			<a href="../bumperball.html" class="unit w-1-4 align-center no-gutters-mobile">
+			<a href="../bumperball" class="unit w-1-4 align-center no-gutters-mobile">
 				<div class="card shadow1">
 					<h3>Bumper Ball <i class="icon-angle-double-right"></i></h3>
 				</div>
 			</a>
-		</section>
+	</section>
+	
 	</main>
 
 	<footer>
 		<div class="wrap grid">
 			<div class="unit w-2-3 hide-on-mobiles">
 				<div class="unit w-1-3 hide-on-mobiles">
-					<a href="index.html">Home</a>
-					<a href="about.html">About</a>
-						<a class="sub_link" href="earlyslive.html">Early's Live</a>
-						<a class="sub_link" href="foodanddrink.html">Food & Drink</a>
-						<a class="sub_link" href="theisland.html">The Island</a>
-						<a class="sub_link" href="gallery.html">Gallery</a>
+					<a href="../">Home</a>
+					<a href="../about-us">About</a>
+						<a class="sub_link" href="/about/earlyslive">Early's Live</a>
+						<a class="sub_link" href="/about/foodanddrink">Food & Drink</a>
+						<a class="sub_link" href="/about/theisland">The Island</a>
+						<a class="sub_link" href="/about/gallery">Gallery</a>
 				</div>
-				<div class="unit w-1-3 hide-on-mobiles">				
+				<div class="unit w-1-3">				
 					<a href="http://news.earlysbar.com">News</a>
-					<a href="contact.html">Contact</a>
-						<a class="sub_link" href="../bandb.html" target="_blank">B&B</a>
+					<a href="/contact">Contact</a>
 						<a class="sub_link" href="mailto:jerryearly@hotmail.com" target="_blank">Email</a>
-						<a class="sub_link" href="tel:+353749520515">Call Us</a>
+						<a class="sub_link" target="_blank" href="https://www.facebook.com/pages/Earlys-Bar/509916889167336?fref=ts">Facebook</a>
+						<a class="sub_link" target="_blank" href="https://twitter.com/EarlysBar">Twitter</a>
 				</div>
 				<div class="unit w-1-3 hide-on-mobiles">
 					<h3>Funtivities</h3>
-						<a class="sub_link" href="../directions.html">How To Get Here</a>
-						<a class="sub_link" href="../bumperball.html">Bumper Ball</a>
-						<a class="sub_link" href="../arranmorefc.html">Arranmore Utd FC</a>
+						<a class="sub_link" href="../directions">How To Get Here</a>
+						<a class="sub_link" href="../bumperball">Bumper Ball</a>
+						<a class="sub_link" href="../arranmorefc">Arranmore Utd FC</a>
 				</div>
 			</div>
 			<div class="unit w-1-3 align-center">
 				<h3>Share</h3>
 				<span>Help us spread the word about the bar.</span>
 				<div class="align-center">
-					<a class="social" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://earlysbar.com"><i class="icon-facebook-squared"></i></a>
-					<a class="social" target="_blank" href="https://twitter.com/home?status=Check%20out%20http://earlysbar.com%20from%20%40EarlysBar"><i class="icon-twitter"></i></a>
-					<a class="social" target="_blank" href="https://plus.google.com/share?url=http://earlysbar.com"><i class="icon-gplus"></i></a>
+					<a class="social" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://earlysbar.com/about/gallery"><i class="icon-facebook-squared"></i></a>
+					<a class="social" target="_blank" href="https://twitter.com/home?status=Check%20out%20http://earlysbar.com/about/gallery%20from%20%40EarlysBar"><i class="icon-twitter"></i></a>
+					<a class="social" target="_blank" href="https://plus.google.com/share?url=http://earlysbar.com/about/gallery"><i class="icon-gplus"></i></a>
 				</div>
 			</div>
 		</div>

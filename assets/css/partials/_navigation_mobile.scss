@@ -53,7 +53,7 @@ SIDE PANEL
 }
 .cd-panel.is-visible::after {
   // OVERLAY BACKGROUND
-  background: $primary_dull_alpha;
+  background: $bkg_overlay;
   -webkit-transition: background 0.3s 0s;
   -moz-transition: background 0.3s 0s;
   transition: background 0.3s 0s;
@@ -143,9 +143,9 @@ SIDE PANEL
   width: $panel_width_default;
   height: 100%;
   top: 0;
-  background: $primary_dull;
-  color: $background;
-  box-shadow: 2px 0px 2px $primary_dull;
+  background: $background;
+  color: $primary_dull;
+  box-shadow: 2px 0px 2px $primary;
   -webkit-transition-property: -webkit-transform;
   -moz-transition-property: -moz-transform;
   transition-property: transform;
@@ -211,35 +211,68 @@ SIDE PANEL
   -webkit-overflow-scrolling: touch;
 }
 
+
 .cd-panel-content {
   ul {
     margin: 0px;
     padding: 0px;
     list-style-type: none;
-    a {
+    li {
       display: block;
-      color: $background;
-      padding: 0px;
-      text-decoration: none;
+      color: $primary_dull;
+      font-weight: 700;
       box-shadow: 0px -1px 0px 0px $primary_light inset;
-      &:hover, &:active {
-        background: $primary_light;
-        color: $primary_dull;
+      &:hover {
+        background-color: $primary_light;
+        a {color: $background;}
       }
-      &.bottom {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        // box-shadow: 0px 1px 0px 0px $primary_light inset;
-      }
-      li {
-        padding: 1em 2em;
+      a {
+        display: block;
+        padding: 1em;
+        width:100%;
         i {
-          font-size: 1.25em;
+          font-size: 1em;
           padding-left: 0.5em;
           margin-right: 1em;
         }
       }
+      &.sub {
+        padding-left: 1em;
+        a {color:$primary;}
+      }
     }
   }
 }
+
+// .cd-panel-content {
+//   ul {
+//     margin: 0px;
+//     padding: 0px;
+//     list-style-type: none;
+//     a {
+//       display: block;
+//       color: $background;
+//       padding: 0px;
+//       text-decoration: none;
+//       box-shadow: 0px -1px 0px 0px $primary_light inset;
+//       &:hover, &:active {
+//         background: $primary;
+//         color: $background;
+//       }
+//       &.bottom {
+//         position: absolute;
+//         bottom: 0;
+//         width: 100%;
+//         // box-shadow: 0px 1px 0px 0px $primary_light inset;
+//       }
+//       li {
+//         padding: 1em 2em;
+//         i {
+//           font-size: 1.25em;
+//           padding-left: 0.5em;
+//           margin-right: 1em;
+//         }
+//       }
+//     }
+//   }
+// }
